@@ -64,7 +64,16 @@ function App() {
     }
   ])
   return (
-
+    
+    <div className="App">
+    <div className='icon-container'>
+      {students.map(student =>
+        <div className='class-div'>
+        <Student student={student} />
+        </div>
+      )}
+    </div>
+  </div>
 
     
   );
